@@ -1,0 +1,65 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-27 19:11:08.1568958 UTC
+
+interface main@main:CountNonEmpty 8002
+  interface hash: a4e70929b5a1d501387b0801f623d2a7
+  ABI hash: 91286d319b9a03bffd3488103a72b52a
+  export-list hash: 5cf8a2b13aec9d381a876915901d419c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8ffc45705c1f9864d59eb93b468a01c5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CountNonEmpty.countNonEmptyLines
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+3a7179c00a78568daf3800d04e8110e7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CountNonEmpty.$trModule2
+                   CountNonEmpty.$trModule1) -}
+426c05ec046a51d673068b26b20509ca
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CountNonEmpty"#) -}
+f24bd970d950281d0f09e134d630e539
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c49d20566eb15fbc5e72603df213f733
+  $wgo :: [[GHC.Types.Char]] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+705e21131888d13ebd61635028db24eb
+  countNonEmptyLines :: GHC.Base.String -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 case CountNonEmpty.$wgo
+                        (Data.OldList.lines w)
+                        0# of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
