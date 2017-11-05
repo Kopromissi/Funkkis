@@ -1,0 +1,41 @@
+Q.testPollProd
+V: 0
+product [] = 0, joten kertolaskun nollasäännön mukaan
+tulo on 0.
+
+Q.ExprVsStatement
+lausekkeita ovat:
+let s = (b*2-4*a*c) in (s-b / (2*a),s+b / (2*a))
+if b then foo else bar
+Koska nämä on mahdollista sieventää tai laskea
+
+Loput eivät ole.
+module Main where
+kertoo, mikä moduuli tiedostossa on
+quadratic :: Floating a -> (a, a, a) -> (a,a)
+esittelee funktion tyypin
+quadratic (a,b,c) = ...
+määrittelee funktion
+x = x + 5
+on syntaksivirhe, ei voida muuttaa x:n arvoa
+
+Q.atanMonster
+atan2 pi/12 pi*2.1
+on kertolasku, kun sulut laitetaan paikalleen,
+saadaan ((atan2 pi)/(12 pi))*2.1. Tästä on helppo huomata, että näille
+on operaattorit. Funktiokutsussa ei saa olla sulkuja, operaattori /
+päättää kutsun atan. Jakolasku on sulkujen sisällä.
+
+Q.IfExprs
+if x then "Good" else "Bad"
+molemmat hyviä, ei valittamista
+if x == True then "Good" else "Bad"
+toimii, mutta ei ole kovin hyvä syntaksi koodille.
+if x else "Bad"
+if x then "Good"
+kumpikaan ei kelpaa, koska haskellissa tulle if-rakenteessa olla
+then ja else vaihtoehdot.
+
+Q.Scope1
+viittaa x₂, koska se on sidottu siihen greeting x₂ = "Hello, " ++ x :ssä
+x viittaa argumenttiin, jonka greeting ottaa vastaan

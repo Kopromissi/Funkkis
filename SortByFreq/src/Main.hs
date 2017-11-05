@@ -8,7 +8,5 @@ import Data.Ord
 freqSort :: String -> String
 freqSort inputString =
                     let
-                    sortString = sort inputString
-                    toGroups = group sortString
-                    sortGroups = sortBy (comparing length) toGroups
-                    in concat sortGroups
+                    sortString =  sortBy (comparing length) (group( sort inputString))
+                    in concat sortString

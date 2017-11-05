@@ -5,5 +5,6 @@ import Data.Char
 
 takeHost :: String -> String
 takeHost url = let
-                removePrefix  = drop  3(dropWhile isAlpha url)
-                in takeWhile (/= '/') removePrefix
+                removePrefix  = takeWhile (/= '/')(drop  2(dropWhile (/= '/') url))
+                in removePrefix
+--TODO How to remove suffix from url

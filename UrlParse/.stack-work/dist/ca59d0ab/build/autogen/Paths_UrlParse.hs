@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\bin"
-libdir     = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\lib\\x86_64-windows-ghc-8.0.2\\UrlParse-0.1.0.0"
-dynlibdir  = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\lib\\x86_64-windows-ghc-8.0.2"
-datadir    = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\share\\x86_64-windows-ghc-8.0.2\\UrlParse-0.1.0.0"
-libexecdir = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\libexec"
-sysconfdir = "C:\\Users\\Toni\\Documents\\Funkkari\\UrlParse\\.stack-work\\install\\34070b1b\\etc"
+bindir     = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\bin"
+libdir     = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\lib\\x86_64-windows-ghc-8.0.2\\UrlParse-0.1.0.0"
+dynlibdir  = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\lib\\x86_64-windows-ghc-8.0.2"
+datadir    = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\share\\x86_64-windows-ghc-8.0.2\\UrlParse-0.1.0.0"
+libexecdir = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\libexec"
+sysconfdir = "C:\\Users\\Toni\\Documents\\Hommahopot\\Funkkis\\UrlParse\\.stack-work\\install\\34070b1b\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "UrlParse_bindir") (\_ -> return bindir)
